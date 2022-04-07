@@ -15,13 +15,13 @@ class PlaceLocation {
 class Place {
   final String id;
   final String title;
-  final PlaceLocation locatoion;
+  final PlaceLocation? locatoion;
   final File image;
 
   Place({
     required this.id,
     required this.title,
-    required this.locatoion,
+    this.locatoion,
     required this.image,
   });
 }
